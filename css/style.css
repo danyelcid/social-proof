@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap'); 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    --fw-medium: 400;
+    --fw-bold: 400;
+    --fw-black: 400;
+    
+
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    background-color: var(--white);
+    color: var(--very-dark-magenta);
+}
+.bg-light{
+    color: var(--dark-grayish-magenta);
+    background-color: var(--light-grayish-magenta);
+}
+.bg-dark{
+    color: var(--white);
+    background-color: var(--very-dark-magenta);
+}
+main{
+    max-width: 1110px;
+    min-height: 100vh;
+    margin: auto;
+    padding-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overall{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.main-title{
+    font-size: 4rem;
+    font-weight: var(--fw-black);
+}
+.rating{
+    font-weight: var(--fw-black);
+    display: inline-block;
+    margin-left: calc(var(--order) * 2rem);
+    padding: 1rem 4rem 1rem 2rem;
+    margin-block: 1rem;
+}
+.ratings .icons{
+    display: inline-block;
+}
+
+.testimonials{
+    display: flex;
+    gap: 2rem;
+}
+.card{
+    max-width: 33.75rem;
+    border-radius: 1rem;
+    padding: 3.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* attribution */
+.attribution{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: .7rem;
+}
+
+.attribution a{
+    color: var(--very-dark-magenta);
+    text-decoration: none;
+}
+.attribution a:hover{
+    text-decoration: underline;
+}
