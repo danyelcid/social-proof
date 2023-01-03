@@ -27,7 +27,11 @@ body{
     line-height: 1.75;
     background-color: var(--white);
     color: var(--dark-grayish-magenta);
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
 }
+
 .bg-light{
     color: var(--very-dark-magenta);
     background-color: var(--light-grayish-magenta);
@@ -95,7 +99,7 @@ main{
 }
 .card{
     border-radius: .75rem;
-    padding: 2rem;
+    padding: 1.5rem;
     display: grid;
     gap: .75rem 1.5rem;
     grid-template:  'avatar author' auto 
@@ -146,8 +150,11 @@ main{
 
 
 @media (max-width: 544px) {
+    body{
+        background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    }
     main{
-        padding: 4rem 1.25rem;
+        padding: 4rem 1.25rem 1.25rem 1.25rem;
         gap: 4rem;
 
     }
